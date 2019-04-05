@@ -29,7 +29,7 @@ dependencies {
     api("org.hibernate:hibernate-search:3.4.2.Final")
 
     // Our libraries
-    api("ome:formats-gpl:5.9.2") {
+    api("ome:formats-gpl:6.0.1") {
         exclude group: "org.perf4j", module: "perf4j"
     }
 
