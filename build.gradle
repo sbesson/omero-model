@@ -31,7 +31,9 @@ dependencies {
     // Our libraries
     api("ome:formats-gpl:6.0.1") {
         exclude group: "org.perf4j", module: "perf4j"
+        exclude group: "com.google.guava", module: "guava"
     }
+    api("com.google.guava:guava:27.1-jre")
 
     // Necessary since formats-bsd has version 0.9.13. This should be removed
     // when fixed in B-F
