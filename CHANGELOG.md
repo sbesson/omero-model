@@ -1,3 +1,9 @@
+5.6.4 (April 2022)
+------------------
+
+- Bump to Bio-Formats 6.9.10 ([#70](https://github.com/ome/omero-model/pull/70))
+- Bump dsl plugin version 5.5.2 ([#69]9https://github.com/ome/omero-model/pull/69))
+
 5.6.3 (April 2021)
 ------------------
 
