@@ -1,3 +1,10 @@
+5.6.6 (June 2022)
+-----------------
+
+- Bump to Bio-Formats 6.10.0 ([#82](https://github.com/ome/omero-model/pull/82))
+- Add configuration to override floating-point pixel data behavior ([#81](https://github.com/ome/omero-model/pull/821))
+- Add Gradle publication workflow ([#83](https://github.com/ome/omero-model/pull/83))
+
 5.6.5 (April 2022)
 ------------------
 
@@ -7,7 +14,7 @@
 ------------------
 
 - Bump to Bio-Formats 6.9.0 ([#70](https://github.com/ome/omero-model/pull/70))
-- Bump dsl plugin version 5.5.2 ([#69]9https://github.com/ome/omero-model/pull/69))
+- Bump dsl plugin version 5.5.2 ([#69](https://github.com/ome/omero-model/pull/69))
 
 5.6.3 (April 2021)
 ------------------
