@@ -1,3 +1,8 @@
+5.6.7 (June 2022)
+-----------------
+
+- Use release 5.5.4 of org.openmicroscopy.project plugin ([#84](https://github.com/ome/omero-model/pull/84))
+
 5.6.6 (June 2022)
 -----------------
 
