@@ -1,3 +1,10 @@
+5.6.9 (November 2022)
+---------------------
+
+- Bump to TestNG 7.5 ([#88](https://github.com/ome/omero-model/pull/88))
+- Bump to Bio-Formats 6.11.1 ([#87](https://github.com/ome/omero-model/pull/87))
+- Fix link to PostgreSQL documentation ([#86](https://github.com/ome/omero-model/pull/86))
+
 5.6.8 (September 2022)
 ----------------------
 
