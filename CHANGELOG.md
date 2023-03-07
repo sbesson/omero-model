@@ -1,3 +1,9 @@
+5.6.10 (March 2023)
+-------------------
+
+- Push to releases folder on artifactory ([#92](https://github.com/ome/omero-model/pull/92))
+- Bump to Bio-Formats 6.12.0 ([#91](https://github.com/ome/omero-model/pull/91))
+
 5.6.9 (November 2022)
 ---------------------
 
