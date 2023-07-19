@@ -1,3 +1,8 @@
+5.6.11 (July 2023)
+-------------------
+
+- Bump to Bio-Formats 6.14.0 ([#91](https://github.com/ome/omero-model/pull/94))
+
 5.6.10 (March 2023)
 -------------------
 
