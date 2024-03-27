@@ -13,11 +13,13 @@ import org.springframework.jdbc.UncategorizedSQLException;
 import org.springframework.jdbc.core.ConnectionCallback;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.SqlParameter;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.simple.SimpleJdbcCall;
 
 import java.sql.Statement;
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
@@ -74,7 +76,20 @@ public class PostgresSqlAction extends SqlAction.Impl {
     }
 
     public void prepareSession(final long eventId, final long userId, final long groupId) {
-        SimpleJdbcCall call = new SimpleJdbcCall(_jdbc()).withFunctionName("_prepare_session"); // FIXME
+        // Version 42.2.11 of the PostgreSQL JDBC driver introduced a backwards-incompatible
+        // change in PgDatabaseMetaData.getProcedures, called internally, to only return
+        // procedures (introduced in PSQL 11).
+        // See https://github.com/spring-projects/spring-framework/issues/25399 for more details
+        // As a workaround, we disable the processing of parameter metadata obtained via JDBC and
+        // explicitly redeclare the function parameters
+        // TODO: revert this workaround when Spring gets upgraded 5.2.8 or later
+        SimpleJdbcCall call = new SimpleJdbcCall(_jdbc())
+            .withFunctionName("_prepare_session")
+            .withoutProcedureColumnMetaDataAccess()
+            .declareParameters(
+                new SqlParameter("_event_id", Types.BIGINT),
+                new SqlParameter("_user_id", Types.BIGINT),
+                new SqlParameter("_group_id", Types.BIGINT));
         MapSqlParameterSource in = new MapSqlParameterSource();
         in.addValue("_event_id", eventId);
         in.addValue("_user_id", userId);
