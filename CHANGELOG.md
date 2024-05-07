@@ -1,3 +1,9 @@
+5.6.14 (May 2024)
+-----------------
+
+- Disable the processing of JDBC parameter metadata ([#19](https://github.com/ome/omero-model/pull/99))
+- Bump to Bio-Formats 7.3.0 ([#100](https://github.com/ome/omero-model/pull/100))
+
 5.6.13 (December 2023)
 ----------------------
 
