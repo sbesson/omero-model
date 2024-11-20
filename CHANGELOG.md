@@ -1,3 +1,9 @@
+5.7.0 (November 2024)
+--------------------
+
+- Build with Java 11 ([#107](https://github.com/ome/omero-model/pull/107))
+- Bump to Bio-Formats 8.0.1 ([#106](https://github.com/ome/omero-model/pull/106))
+
 5.6.15 (July 2024)
 -----------------
 
