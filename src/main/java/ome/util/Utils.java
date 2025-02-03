@@ -9,10 +9,12 @@ import java.io.Closeable;
 import java.lang.reflect.Method;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.logging.Logger;
 
 import ome.model.IObject;
 import ome.model.internal.Permissions;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * various tools needed throughout Omero.
@@ -25,7 +27,7 @@ import ome.model.internal.Permissions;
  */
 public class Utils {
 
-    private final static Logger log = Logger.getLogger(Utils.class.getName());
+    private final static Logger log = LoggerFactory.getLogger(Utils.class.getName());
 
     protected final static String CGLIB_IDENTIFIER = "$$EnhancerByCGLIB$$";
 
@@ -157,7 +159,7 @@ public class Utils {
 
     public static void closeQuietly(Closeable is) {
         if (is == null) {
-            log.fine("Closeable is null");
+            log.trace("Closeable is null");
         } else {
             try {
                 is.close();
