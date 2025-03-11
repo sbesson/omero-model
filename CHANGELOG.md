@@ -1,5 +1,12 @@
+5.7.1 (March 2025)
+------------------
+
+- Bump to Bio-Formats 8.1.1 ([#109](https://github.com/ome/omero-model/pull/109))
+- Replace java.util.logging by slf4j ([#108](https://github.com/ome/omero-model/pull/108))
+- Add default value and documentation for omero.pixeldata.max_tile_length ([#110](https://github.com/ome/omero-model/pull/110))
+
 5.7.0 (November 2024)
---------------------
+---------------------
 
 - Build with Java 11 ([#107](https://github.com/ome/omero-model/pull/107))
 - Bump to Bio-Formats 8.0.1 ([#106](https://github.com/ome/omero-model/pull/106))
