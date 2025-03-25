@@ -1,3 +1,9 @@
+5.7.2 (March 2025)
+------------------
+
+- Specify Java target using release flag ([#112](https://github.com/ome/omero-model/pull/112))
+- Bump internal infra dependencies ([#111](https://github.com/ome/omero-model/pull/111))
+
 5.7.1 (March 2025)
 ------------------
 
