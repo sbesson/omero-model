@@ -13,6 +13,13 @@ ext {
 repositories {
     mavenLocal()
     mavenCentral()
+    maven {
+        url 'https://artifacts.glencoesoftware.com/artifactory/ome.releases'
+    }
+    maven {
+        name 'Unidata'
+        url 'https://artifacts.glencoesoftware.com/artifactory/unidata-releases'
+    }
 }
 
 compileJava {
