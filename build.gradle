@@ -25,7 +25,7 @@ dependencies {
     // Needs updating to later versions
     api("org.springframework:spring-orm:4.3.14.RELEASE")
     api("org.springframework:spring-context:4.3.14.RELEASE")
-    api("org.springframework:spring-context-support:4.3.22.RELEASE")
+    api("org.springframework:spring-context-support:5.3.20")
     api("org.hibernate:hibernate-core:3.6.10.Final")
     api("org.hibernate:hibernate-search:3.4.2.Final")
 
